@@ -33,18 +33,22 @@ public class JsonUtils {
 
             JSONArray akaArrayList = sandwichObject.getJSONArray("alsoKnownAs");
             ArrayList<String> alsoKnownAs = new ArrayList<>();
-            for (int i=0; i< akaArrayList.length(); i++) {
-                alsoKnownAs.add(akaArrayList.getString(i));
+            if (akaArrayList.length() != 0) {
+                for (int i = 0; i < akaArrayList.length(); i++) {
+                    alsoKnownAs.add(akaArrayList.getString(i));
+                }
             }
 
             String placeOfOrigin = sandwichObject.getString("placeOfOrigin");
             String description = sandwichObject.getString("description");
             String image = sandwichObject.getString("image");
 
-            JSONArray ingredientsList = sandwichObject.getJSONArray("ingredients");
+            JSONArray ingredientsArrayList = sandwichObject.getJSONArray("ingredients");
             ArrayList<String> ingredients = new ArrayList<>();
-            for (int i=0; i< ingredientsList.length(); i++) {
-                ingredients.add(ingredientsList.getString(i));
+            if (ingredientsArrayList.length()!= 0) {
+                for (int i = 0; i < ingredientsArrayList.length(); i++) {
+                    ingredients.add(ingredientsArrayList.getString(i));
+                }
             }
 
             sandwich = new Sandwich

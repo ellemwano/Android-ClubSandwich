@@ -14,17 +14,18 @@
         android:contentDescription="@string/sandwich_picture_content_description"
         android:scaleType="centerCrop" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/detail_main_name"
-        android:textStyle="bold" />
+    <!---->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/detail_main_name"-->
+        <!--android:textStyle="bold" />-->
 
-    <TextView
-        android:id="@+id/main_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="Best Sandwich Ever"/>
+    <!--<TextView-->
+        <!--android:id="@+id/main_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:text="Best Sandwich Ever"/>-->
 
     <TextView
         android:layout_width="wrap_content"
