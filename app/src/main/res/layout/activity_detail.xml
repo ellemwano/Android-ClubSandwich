@@ -15,9 +15,16 @@
         android:scaleType="centerCrop" />
 
     <TextView
-        android:id="@+id/origin_tv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/detail_main_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Best Sandwich Ever"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,10 +33,10 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/also_known_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/detail_ingredients_label"
-        android:textStyle="bold" />
+        tools:text="double agent sandwich"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,23 +45,40 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/description_tv"
+        android:id="@+id/origin_tv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/ingredients_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/also_known_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:text="Earth"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/detail_description_label"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Yummy sandwich!"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_ingredients_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ingredients_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="A little bit of this, some of that, et voila!"/>
+
+
+
+
+
+
+
+
 </LinearLayout>
