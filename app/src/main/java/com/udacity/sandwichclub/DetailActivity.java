@@ -77,11 +77,11 @@ public class DetailActivity extends AppCompatActivity {
         String ingrString = TextUtils.join(", ", sandwich.getIngredients());
         ingredientsTextView.setText(ingrString);
 
+        //Remove asKnownAs and Origin textviews when no content
         if (akaString.isEmpty()) {
             labelAkaTextView.setVisibility(View.GONE);
             alsoKnownAsTextView.setVisibility(View.GONE);
         }
-
         if (sandwich.getPlaceOfOrigin().isEmpty()) {
             labelOriginTextView.setVisibility(View.GONE);
             originTextView.setVisibility(View.GONE);
