@@ -14,10 +14,12 @@ import java.util.ArrayList;
 
 public class JsonUtils {
 
-    //private static final String TAG = JsonUtils.class.getSimpleName();
+    private static final String TAG = JsonUtils.class.getSimpleName();
+
 
     public static Sandwich parseSandwichJson(String json) {
 
+        // Initialize sandwich object
         Sandwich sandwich = null;
 
         try {
@@ -50,7 +52,7 @@ public class JsonUtils {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+        // Return sandwich object
         return sandwich;
     }
 }
