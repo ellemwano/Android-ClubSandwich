@@ -10,12 +10,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class JsonUtils {
 
-
-    private static final String TAG = JsonUtils.class.getSimpleName();
+    //private static final String TAG = JsonUtils.class.getSimpleName();
 
     public static Sandwich parseSandwichJson(String json) {
 
@@ -23,20 +22,16 @@ public class JsonUtils {
 
         try {
 
-            //Extract the JSONObject associated with the key "name"
-            // from the String array sandwich_details
-            JSONObject baseObject = new JSONObject(json);
+            JSONObject sandwichObject = new JSONObject(json);
 
-            JSONObject sandwichObject = baseObject.getJSONObject("name");
+            JSONObject nameObject = sandwichObject.getJSONObject("name");
 
-            String mainName = sandwichObject.getString("mainName");
+            String mainName = nameObject.getString("mainName");
 
-            JSONArray akaArrayList = sandwichObject.getJSONArray("alsoKnownAs");
+            JSONArray akaArrayList = nameObject.getJSONArray("alsoKnownAs");
             ArrayList<String> alsoKnownAs = new ArrayList<>();
-            if (akaArrayList.length() != 0) {
-                for (int i = 0; i < akaArrayList.length(); i++) {
-                    alsoKnownAs.add(akaArrayList.getString(i));
-                }
+            for (int i = 0; i < akaArrayList.length(); i++) {
+                alsoKnownAs.add(akaArrayList.getString(i));
             }
 
             String placeOfOrigin = sandwichObject.getString("placeOfOrigin");
@@ -45,10 +40,8 @@ public class JsonUtils {
 
             JSONArray ingredientsArrayList = sandwichObject.getJSONArray("ingredients");
             ArrayList<String> ingredients = new ArrayList<>();
-            if (ingredientsArrayList.length()!= 0) {
-                for (int i = 0; i < ingredientsArrayList.length(); i++) {
-                    ingredients.add(ingredientsArrayList.getString(i));
-                }
+            for (int i = 0; i < ingredientsArrayList.length(); i++) {
+                ingredients.add(ingredientsArrayList.getString(i));
             }
 
             sandwich = new Sandwich
