@@ -25,22 +25,17 @@
         <TextView
             android:id="@+id/label_origin"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
             android:text="@string/detail_place_of_origin_label"
-            app:layout_constraintBaseline_toBaselineOf="@+id/origin_tv"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_iv" />
 
         <TextView
             android:id="@+id/origin_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/contentTvSmall"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/image_iv"
             tools:text="Earth" />
@@ -48,24 +43,15 @@
         <TextView
             android:id="@+id/label_aka"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="@string/detail_also_known_as_label"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_origin" />
 
         <TextView
             android:id="@+id/also_known_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="0dp"
+            style="@style/contentTvLarge"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_aka"
             tools:text="Double agent sandwich" />
@@ -73,24 +59,16 @@
         <TextView
             android:id="@+id/label_description"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="@string/detail_description_label"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/also_known_tv" />
 
         <TextView
             android:id="@+id/description_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="0dp"
+            style="@style/contentTvLarge"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.26"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_description"
             tools:text="Yummy sandwich!" />
@@ -98,8 +76,6 @@
         <TextView
             android:id="@+id/label_ingredients"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="@string/detail_ingredients_label"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintHorizontal_bias="0.0"
@@ -108,15 +84,11 @@
 
         <TextView
             android:id="@+id/ingredients_tv"
-            style="@style/contentTv"
+            style="@style/contentTvLarge"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="0dp"
             android:paddingBottom="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_ingredients"
             tools:text="A little bit of this, some of that, et voila!" />
@@ -133,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="1.0" />
+            app:layout_constraintGuide_percent="0.97" />
 
 
     </android.support.constraint.ConstraintLayout>

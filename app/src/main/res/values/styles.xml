@@ -9,6 +9,8 @@
     </style>
 
     <style name="labelTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">17sp</item>
         <item name="android:layout_marginTop">8dp</item>
@@ -18,13 +20,24 @@
         <item name="android:layout_marginLeft">8dp</item>
     </style>
 
-    <style name="contentTv">
+    <style name="contentTvSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">16sp</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginRight">8dp</item>
         <item name="android:layout_marginEnd">8dp</item>
         <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="contentTvLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
     </style>
 
 </resources>

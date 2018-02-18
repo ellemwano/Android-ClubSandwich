@@ -15,7 +15,6 @@
             android:id="@+id/image_iv"
             android:layout_width="298dp"
             android:layout_height="175dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/sandwich_picture_content_description"
@@ -27,9 +26,6 @@
         <TextView
             android:id="@+id/label_origin"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:text="@string/detail_place_of_origin_label"
             app:layout_constraintBaseline_toBaselineOf="@+id/origin_tv"
             app:layout_constraintEnd_toStartOf="@+id/guidelineLand"
@@ -37,11 +33,7 @@
 
         <TextView
             android:id="@+id/origin_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            style="@style/contentTvSmall"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="@+id/guidelineLand"
@@ -51,8 +43,6 @@
         <TextView
             android:id="@+id/label_aka"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="@string/detail_also_known_as_label"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintHorizontal_bias="0.0"
@@ -61,11 +51,7 @@
 
         <TextView
             android:id="@+id/also_known_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
+            style="@style/contentTvLarge"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_aka"
@@ -74,11 +60,6 @@
         <TextView
             android:id="@+id/label_description"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:text="@string/detail_description_label"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -86,10 +67,7 @@
 
         <TextView
             android:id="@+id/description_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            style="@style/contentTvLarge"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/label_description"
@@ -98,9 +76,6 @@
         <TextView
             android:id="@+id/label_ingredients"
             style="@style/labelTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:text="@string/detail_ingredients_label"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -108,10 +83,7 @@
 
         <TextView
             android:id="@+id/ingredients_tv"
-            style="@style/contentTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            style="@style/contentTvLarge"
             android:paddingBottom="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -130,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="1.0" />
+            app:layout_constraintGuide_percent="0.98" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guidelineLand"
