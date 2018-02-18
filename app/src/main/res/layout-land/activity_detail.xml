@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="298dp"
+            android:layout_height="175dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_origin"
+            style="@style/labelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/detail_place_of_origin_label"
+            app:layout_constraintBaseline_toBaselineOf="@+id/origin_tv"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLand"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/origin_tv"
+            style="@style/contentTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLand"
+            app:layout_constraintTop_toBottomOf="@+id/image_iv"
+            tools:text="Earth" />
+
+        <TextView
+            android:id="@+id/label_aka"
+            style="@style/labelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_also_known_as_label"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/origin_tv" />
+
+        <TextView
+            android:id="@+id/also_known_tv"
+            style="@style/contentTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_aka"
+            tools:text="Double agent sandwich" />
+
+        <TextView
+            android:id="@+id/label_description"
+            style="@style/labelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/detail_description_label"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            style="@style/contentTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/label_description"
+            tools:text="Yummy sandwich!" />
+
+        <TextView
+            android:id="@+id/label_ingredients"
+            style="@style/labelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/detail_ingredients_label"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+        <TextView
+            android:id="@+id/ingredients_tv"
+            style="@style/contentTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/label_ingredients"
+            tools:text="A little bit of this, some of that, et voila!" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineLand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
