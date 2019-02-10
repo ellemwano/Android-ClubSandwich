@@ -25,7 +25,7 @@
         <TextView
             android:id="@+id/label_origin"
             style="@style/labelTv"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="8dp"
             android:text="@string/detail_place_of_origin_label"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +67,7 @@
         <TextView
             android:id="@+id/description_tv"
             style="@style/contentTvLarge"
+            android:lineSpacingExtra="4sp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintHorizontal_bias="0.26"
             app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +88,7 @@
             style="@style/contentTvLarge"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
             android:paddingBottom="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
             app:layout_constraintStart_toStartOf="parent"

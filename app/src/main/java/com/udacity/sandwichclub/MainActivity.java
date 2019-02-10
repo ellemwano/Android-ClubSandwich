@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_POSITION = "extra_position";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void launchDetailActivity(int position) {
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra(DetailActivity.EXTRA_POSITION, position);
+        intent.putExtra(EXTRA_POSITION, position);
         startActivity(intent);
     }
 }

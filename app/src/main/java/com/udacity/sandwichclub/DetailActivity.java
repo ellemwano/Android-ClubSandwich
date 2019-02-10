@@ -14,8 +14,6 @@ import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
 
 public class DetailActivity extends AppCompatActivity {
-
-    public static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_POSITION = -1;
 
     @Override
@@ -30,7 +28,7 @@ public class DetailActivity extends AppCompatActivity {
             closeOnError();
         }
 
-        int position = intent.getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
+        int position = intent.getIntExtra(MainActivity.EXTRA_POSITION, DEFAULT_POSITION);
         if (position == DEFAULT_POSITION) {
             // EXTRA_POSITION not found in intent
             closeOnError();
@@ -61,12 +59,12 @@ public class DetailActivity extends AppCompatActivity {
 
     private void populateUI(Sandwich sandwich) {
 
-        TextView alsoKnownAsTextView = (TextView) findViewById(R.id.also_known_tv);
-        TextView labelAkaTextView = (TextView) findViewById(R.id.label_aka);
-        TextView originTextView = (TextView) findViewById(R.id.origin_tv);
-        TextView labelOriginTextView = (TextView) findViewById(R.id.label_origin);
-        TextView descriptionTextView = (TextView) findViewById(R.id.description_tv);
-        TextView ingredientsTextView = (TextView) findViewById(R.id.ingredients_tv);
+        TextView alsoKnownAsTextView = findViewById(R.id.also_known_tv);
+        TextView labelAkaTextView = findViewById(R.id.label_aka);
+        TextView originTextView = findViewById(R.id.origin_tv);
+        TextView labelOriginTextView = findViewById(R.id.label_origin);
+        TextView descriptionTextView = findViewById(R.id.description_tv);
+        TextView ingredientsTextView = findViewById(R.id.ingredients_tv);
 
         String akaString = TextUtils.join(", ", sandwich.getAlsoKnownAs());
         alsoKnownAsTextView.setText(akaString);
